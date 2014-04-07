@@ -12,11 +12,12 @@ $(document).ready(function () {
 		// console.log($winH,$winW);
 	};
 
-	// $('header a , #cta-btn').on('click' , function () {
-	// 	var url = $(this).attr('href');
-	// 	$('#main-wrap').load(url + '#main');
-	// 	return false;
-	// });
+	$('header a , #cta-btn').on('click' , function (evt) {
+	 	evt.preventDefault();
+	 	
+	 	var url = $(this).attr('href');
+	 	$('#main-wrap').load(url + ' ' + '#main');
+	 });
 
 	adjustHeight();
 
