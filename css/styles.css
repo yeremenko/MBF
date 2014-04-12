@@ -147,7 +147,7 @@ img.port-img {
 @media (max-width: 992px) {
 	/* ------- PORTFOLIO ------- */
 	#portfolio-list li { 
-		width: 33.33333%;
+		width: 33.33333333%;
 	}
 }
 @media (max-width: 768px) {
