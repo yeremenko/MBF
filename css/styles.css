@@ -1,5 +1,9 @@
-html, a { 
+
+html, a, p{ 
   font-family: 'helvetica',sans-serif;
+}
+h1, h2 {
+	font-family: 'Ostrich Sans Rounded', helvetica, sans-serif;
 }
 #link-wrap a,
 #cta-btn {
@@ -106,26 +110,38 @@ header {
 }
 
 /* -- PORTFOLIO -- */
-#portfolio-list { 
+#portfolio-list,
+#about-main { 
 	padding-top: 80px;
 }
 #portfolio-list li {
+	position: relative;
 	display: inline-block;
 	width: 25%;
     text-align: left;
     float: left;
     margin-bottom: -4px;
 }
-/*#portfolio-list li .overlay {
-	display: none;
-	display: inline-block;
+.excerpt {
 	position: absolute;
-	background-color: rgba(20, 20, 20, .9);
+	display: none;
 	top: 0;
 	left: 0;
-	bottom: 0;
-	right: 0;
-}*/
+	background-color: rgba(0,0,0,.85);
+	min-width: 100%;
+	min-height: 100%;
+}
+.excerpt p {
+	padding: 20px;
+	color: #fff;
+}
+.arrow {
+	position: absolute;
+	bottom: 25px;
+	right: 15px;
+	height:18px;
+	width: 18px;
+}
 img.port-img {
 	width: 100%;
 }
@@ -133,6 +149,36 @@ img.port-img {
 	clear: both;
 }
 
+/* ---------------------------- */
+/* --------- ABOUT ME --------- */
+/* ---------------------------- */
+#about-photo {
+	height: 100px;
+}
+#profile-pic {
+	max-width: 22.5%;
+	margin: 0 20px 20px;
+	float: left;
+	border-radius:999px; 
+}
+#about-me {
+	padding: 0 20px 20px;
+/*	float: right;
+	width: 66.666666%;*/
+}
+#about-me h2 {
+	font-size: 48px;
+	color:#bb161c;
+/*	padding-top: 20px;
+	padding-bottom: 15px;*/
+	margin-bottom: 20px;
+}
+#about-me p {
+	color: #fff;
+	font-weight:200;
+	line-height: 1.2em;
+	font-size: 18px;
+}
 
 /* ------------------------------ */
 /* --------- RESPONSIVE --------- */
@@ -151,12 +197,12 @@ img.port-img {
 	}
 }
 @media (max-width: 768px) {
-	header {
+/*	header {
 		padding-bottom: 20px;
-	}
-	#link-wrap {
+	}*/
+/*	#link-wrap {
 		display: none;		
-	}
+	}*/
 	#cta-wrap {
 		bottom: 40px;
 	}
