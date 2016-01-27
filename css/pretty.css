@@ -1,0 +1,118 @@
+
+html,
+body,
+a,
+p,
+span {
+  font-family: 'Ostrich Sans', 'helvetica',sans-serif;
+}
+/*h1,
+h2 {
+  font-family: 'Ostrich Sans', helvetica, sans-serif;
+}*/
+.text-red {
+  color: #bb161c !important;
+}
+.strong {
+  font-weight: 900;
+}
+#header-wrapper {
+  display: block;
+
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+#header-wrapper .container,
+#main-wrap .container {
+  max-width: 900px;
+}
+.contact-info {
+  font-size: 1.66em;
+
+  display: block;
+
+  margin-top: 10px;
+
+  letter-spacing: 0.08em;
+}
+#header-img {
+  display: block;
+
+  width: 100%;
+  max-width: 900px;
+  height: 200px;
+
+  background: url('../img/faina-action-small.png') no-repeat right bottom;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+@media (max-width: 767px) {
+  #header-img {
+    width: auto;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+#header-nav {
+  margin-bottom: 20px;
+}
+#header-logo {
+  font-family: 'Ostrich Sans';
+  font-size: 3em;
+
+  letter-spacing: 0.08em;
+
+  color: #000;
+}
+#header-logo:hover,
+#header-logo:focus {
+  text-decoration: none;
+}
+#navigation {
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  #navigation {
+    text-align: center;
+  }
+}
+#navigation li {
+  font-size: 1.6em;
+
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 0;
+
+  letter-spacing: 0.08em;
+}
+#navigation li a {
+  text-decoration: none;
+
+  border: 1px solid #fff;
+}
+#navigation li a.active {
+  color: #000;
+  border-bottom-color: #bb161c;
+}
+#main-wrap {
+  margin-bottom: 60px;
+}
+#portfolio .portfolio-item {
+  max-width: 385px;
+  margin-bottom: 30px;
+}
+#portfolio .portfolio-item-link:hover,
+#portfolio .portfolio-item-link:focus {
+  text-decoration: none;
+}
+#portfolio .link-description {
+  font-size: 1.66em;
+
+  display: block;
+
+  margin-top: 10px;
+
+  letter-spacing: 0.08em;
+}

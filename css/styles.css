@@ -1,214 +1,265 @@
 
-html, a, p{ 
+html,
+a,
+p {
   font-family: 'helvetica',sans-serif;
 }
-h1, h2 {
-	font-family: 'Ostrich Sans Rounded', helvetica, sans-serif;
+h1,
+h2 {
+  font-family: 'Ostrich Sans', helvetica, sans-serif;
 }
 #link-wrap a,
 #cta-btn {
-	font-family: 'Ostrich Sans Rounded', helvetica, sans-serif;
-	font-size:28px;
-	letter-spacing: 1.33px;
-	text-decoration: none;
-	outline: 0;
+  font-family: 'Ostrich Sans', helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+
+  text-decoration: none;
+  letter-spacing: 1.33px;
+
+  outline: 0;
 }
 body {
-	height: 100%;
-	background-color: rgb(8,8,8);
+  height: 100%;
+
+  background-color: rgb(8,8,8);
 }
 .container {
-	width: 1170px;
-	margin: auto;
-	position: relative;
+  position: relative;
+
+  width: 1170px;
+  margin: auto;
 }
 
 /* ----- HEADER ----- */
 
 header {
-	position: fixed;
-	min-height: 36px;
-	padding-top: 15px;
-	background-color: rgba(20,20,20,.65);
-	width: 100%;
-	text-transform: uppercase;
-	z-index: 999;
+  position: fixed;
+  z-index: 999;
+
+  width: 100%;
+  min-height: 36px;
+  padding-top: 15px;
+
+  text-transform: uppercase;
+
+  background-color: rgba(20,20,20,0.65);
 }
 #logo-wrap {
-	display: inline-block;
-	width: auto;
-	margin: 5px 15px 0 15px;
-	height: 42px;
+  display: inline-block;
+
+  width: auto;
+  height: 42px;
+  margin: 5px 15px 15px 15px;
 }
 #link-wrap {
-	display: block;
-	float: right;
+  display: block;
+  float: right;
 }
 #logo {
-	height: 36px;
+  height: 36px;
 }
-#link-wrap a {	
-	color: #fff;
-	padding: 12px 12px 20px 12px;
-	display: inline-block;
-	border-bottom: 5px solid transparent;
-	-webkit-transition:all .3s ease;
-	-moz-transition:all .3s ease;
-	-o-transition:all .3s ease;
-	transition:all .3s ease;
+#link-wrap a {
+  display: inline-block;
+
+  padding: 12px 12px 20px 12px;
+
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+  color: #fff;
+  border-bottom: 5px solid transparent;
 }
 #link-wrap a:hover,
 #link-wrap a:focus,
 .link-wrap-selected {
-	background-color: rgba(0,0,0,.9);
-	border-bottom: 5px solid #bb161c !important;
+  border-bottom: 5px solid #bb161c !important;
+  background-color: rgba(0,0,0,0.9);
 }
 #hero {
-	min-height: 100%;
-	display: block;
-	background: url('../img/faina-action.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-		    background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/faina-action.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/faina-action.jpg', sizingMethod='scale')";
-	
+  display: block;
+
+  min-height: 100%;
+
+  background: url('../img/faina-action.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/faina-action.jpg', sizingMethod='scale');
+  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src=\'../img/faina-action.jpg\', sizingMethod=\'scale\')';
 }
 #hero .container {
-	display: block;
-	height: 100%;
+  display: block;
+
+  height: 100%;
 }
 
 /* ----- BODY ----- */
 
 #cta-wrap {
-	position: absolute;
-	width: 100%;
-	bottom: 80px;
+  position: absolute;
+  bottom: 80px;
+
+  width: 100%;
+}
+#cta-btn-wrap {
+  display: block;
+
+  max-width: 220px;
+  margin: 0 auto;
 }
 #cta-btn {
-	display: block;
-	border:3px solid white;
-	padding: 16px 12px 12px 24px;
-	margin: 0 auto;
-	max-width: 180px;
-	text-align: center;
-	color: #fff;
-	-webkit-transition:all .3s ease;
-	-moz-transition:all .3s ease;
-	-o-transition:all .3s ease;
-	transition:all .3s ease;
+  display: block;
+
+  max-width: 180px;
+  margin: 0 15px;
+  padding: 16px 0 12px;
+
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+  text-align: center;
+
+  color: #fff;
+  border: 3px solid white;
 }
 #cta-btn:hover,
 #cta-btn:focus {
-	background-color: rgba(0,0,0,.35);
-	/*color: #222;*/
+  background-color: rgba(0,0,0,0.35);
+  /*color: #222;*/
 }
 #cta-btn img {
-	float: right;
+  float: right;
 }
 
 /* -- PORTFOLIO -- */
+
 #portfolio-list,
-#about-main { 
-	padding-top: 80px;
+#about-main {
+  padding-top: 80px;
 }
 #portfolio-list li {
-	position: relative;
-	display: inline-block;
-	width: 25%;
-    text-align: left;
-    float: left;
-    margin-bottom: -4px;
+  position: relative;
+
+  display: inline-block;
+  float: left;
+
+  width: 25%;
+  margin-bottom: -4px;
+
+  text-align: left;
 }
 .excerpt {
-	position: absolute;
-	display: none;
-	top: 0;
-	left: 0;
-	background-color: rgba(0,0,0,.85);
-	min-width: 100%;
-	min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  min-width: 100%;
+  min-height: 100%;
+
+  background-color: rgba(0,0,0,0.80);
 }
 .excerpt p {
-	padding: 20px;
-	color: #fff;
+  padding: 20px;
+
+  color: #fff;
 }
 .arrow {
-	position: absolute;
-	bottom: 25px;
-	right: 15px;
-	height:18px;
-	width: 18px;
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
+
+  width: 18px;
+  height: 18px;
 }
 img.port-img {
-	width: 100%;
+  width: 100%;
 }
 #footer-contact {
-	clear: both;
+  clear: both;
 }
 
 /* ---------------------------- */
 /* --------- ABOUT ME --------- */
 /* ---------------------------- */
 #about-photo {
-	height: 100px;
+  height: 100px;
 }
 #profile-pic {
-	max-width: 22.5%;
-	margin: 0 20px 20px;
-	float: left;
-	border-radius:999px; 
+  float: left;
+
+  max-width: 22.5%;
+  margin: 0 20px 20px;
+
+  border-radius: 999px;
 }
 #about-me {
-	padding: 0 20px 20px;
-/*	float: right;
+  padding: 0 20px 20px;
+  /*	float: right;
 	width: 66.666666%;*/
 }
 #about-me h2 {
-	font-size: 48px;
-	color:#bb161c;
-/*	padding-top: 20px;
+  font-size: 48px;
+  /*	padding-top: 20px;
 	padding-bottom: 15px;*/
-	margin-bottom: 20px;
+
+  margin-bottom: 20px;
+
+  color: #bb161c;
 }
 #about-me p {
-	color: #fff;
-	font-weight:200;
-	line-height: 1.2em;
-	font-size: 18px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.2em;
+
+  color: #fff;
 }
 
 /* ------------------------------ */
 /* --------- RESPONSIVE --------- */
 /* ------------------------------ */
 
-
 @media (max-width: 1200px) {
-	.container {
-		width: 100%;
-	}
+  .container {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
-	/* ------- PORTFOLIO ------- */
-	#portfolio-list li { 
-		width: 33.33333333%;
-	}
+  /* ------- PORTFOLIO ------- */
+  #portfolio-list li {
+    width: 33.33333333%;
+  }
 }
 @media (max-width: 768px) {
-/*	header {
-		padding-bottom: 20px;
-	}*/
-/*	#link-wrap {
-		display: none;		
-	}*/
-	#cta-wrap {
-		bottom: 40px;
-	}
-	/* ------- PORTFOLIO ------- */
-	#portfolio-list li { 
-		width: 50%;
-	}
-}
+  #menu-dropdown {
+    display: block;
+    float: right;
+  }
+  #link-wrap {
+    display: none;
 
+    width: 100%;
+  }
+  #link-wrap a {
+    display: block;
+
+    margin-right: 15px;
+    margin-left: 15px;
+
+    text-align: center;
+  }
+  #cta-wrap {
+    bottom: 40px;
+  }
+  /* ------- PORTFOLIO ------- */
+  #portfolio-list li {
+    width: 50%;
+  }
+}
