@@ -100,6 +100,10 @@ h2 {
   margin-bottom: 60px;
 }
 #portfolio .portfolio-item {
+  position: relative;
+
+  overflow: hidden;
+
   max-width: 385px;
   margin-bottom: 30px;
 }
@@ -115,4 +119,24 @@ h2 {
   margin-top: 10px;
 
   letter-spacing: 0.08em;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  width: 100%;
+  min-height: 225px;
+
+  background: url('../img/preview-overlay.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.featherlight .featherlight-content {
+  padding: 0;
+
+  border-bottom: none;
 }
