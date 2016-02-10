@@ -1,4 +1,7 @@
-
+ /*For MixItUp filtering - Target elements must be hidden*/
+#portfolio .mix {
+  display: none;
+}
 html,
 body,
 a,
@@ -132,7 +135,7 @@ h2 {
 
   background: url('../img/preview-overlay.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: contain;
 }
 .featherlight .featherlight-content {
