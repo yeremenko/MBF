@@ -9,6 +9,15 @@ $(document).ready(function () {
   };
 
   var initialize = function () {
+    $('#portfolio').mixItUp(
+      {
+        animation: {
+          duration: 400,
+          effects: 'fade',
+          easing: 'cubic-bezier(0.39, 0.575, 0.565, 1)'
+        }
+      }
+    );
     imgOverlay();
   };
 

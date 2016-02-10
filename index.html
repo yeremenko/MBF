@@ -44,26 +44,40 @@
       <div class="container">
         <ul id="navigation" class="list-inline">
           <li>
-            <a href="#" class="active text-muted">All</a>
+            <a href="#" class="filter active text-muted" data-filter="all">All</a>
           </li>
           <li>
-            <a href="#" class="text-muted">Beauty</a>
+            <a href="#" class="filter text-muted" data-filter=".cat-beauty">Beauty</a>
           </li>
           <li>
-            <a href="#" class="text-muted">Fantasy</a>
+            <a href="#" class="filter text-muted" data-filter=".cat-fantasy">Fantasy</a>
           </li>
           <li>
-            <a href="#" class="text-muted">Bridal</a>
+            <a href="#" class="filter text-muted" data-filter=".cat-bridal">Bridal</a>
           </li>
           <li>
-            <a href="#" class="text-muted">Special FX</a>
+            <a href="#" class="filter text-muted" data-filter=".cat-special">Special FX</a>
           </li>
         </ul>
         <ul id="portfolio" class="row list-unstyled">
-          <li class="col-xs-6 col-md-4 portfolio-item" data-featherlight="img/portfolio/01-full.jpg">
+          <li class="col-xs-6 col-md-4 portfolio-item mix cat-beauty cat-bridal" data-featherlight="img/portfolio/01-full.jpg">
             <a href="#" class="portfolio-item-link">
               <!-- <div class="img-overlay"></div> -->
               <img class="img-responsive" src="img/portfolio/01-preview.jpg" alt="">
+              <!-- <span class="link-description text-muted">Description</span> -->
+            </a>
+          </li>
+          <li class="col-xs-6 col-md-4 portfolio-item mix cat-fantasy" data-featherlight="img/portfolio/02-full.jpg">
+            <a href="#" class="portfolio-item-link">
+              <!-- <div class="img-overlay"></div> -->
+              <img class="img-responsive" src="img/portfolio/02-preview.jpg" alt="">
+              <!-- <span class="link-description text-muted">Description</span> -->
+            </a>
+          </li>
+          <li class="col-xs-6 col-md-4 portfolio-item mix cat-special" data-featherlight="img/portfolio/03-full.jpg">
+            <a href="#" class="portfolio-item-link">
+              <!-- <div class="img-overlay"></div> -->
+              <img class="img-responsive" src="img/portfolio/03-preview.jpg" alt="">
               <!-- <span class="link-description text-muted">Description</span> -->
             </a>
           </li>
@@ -71,10 +85,10 @@
       </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <!-- // <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/featherlight.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
