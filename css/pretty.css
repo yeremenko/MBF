@@ -84,11 +84,18 @@ h2 {
 #navigation li {
   font-size: 1.6em;
 
+  display: inline-block;
+
   margin-right: 5px;
   margin-left: 5px;
   padding: 0;
 
   letter-spacing: 0.08em;
+}
+#navigation li a:hover,
+#navigation li a:focus {
+  cursor: pointer;
+  cursor: hand;
 }
 #navigation li a {
   text-decoration: none;
