@@ -16,100 +16,119 @@
     <header>
       <div id="header-wrapper" class="center-block">
         <div class="container">
-          <div id="header-nav" class="row">
-            <div class="col-sm-4 col-sm-push-4">
-              <a href="index.html" id="header-logo" class="center-block text-center text-uppercase">
-                Makeup<span class="text-red">by</span>Faina
-                <!-- <img id="logo" src="img/logo.png" alt="Makeup By Faina"> -->
-              </a>
-            </div>
-            <div class="col-sm-4 col-sm-pull-4 hidden-xs">
-              <!-- <span class="contact-info text-right text-muted">fainarud90@gmail.com</span> -->
-            </div>
-            <div class="col-sm-4 hidden-xs">
-              <!-- <span class="contact-info text-left text-muted">1 (646) 291-7381</span> -->
+          <div id="header-nav">
+            <a href="index.html" id="header-logo" class="text-uppercase" data-show-section="landing-wrap">
+              Makeup<span class="text-red">by</span>Faina
+              <!-- <img id="logo" src="img/logo.png" alt="Makeup By Faina"> -->
+            </a>
+            <div id="link-wrap" class="pull-right">
+              <ul class="list-inline">
+                <li>
+                  <a href="#" id="link-portfolio" class="text-muted" data-show-section="portfolio-wrap">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#" id="link-about" class="text-muted" data-show-section="about-wrap">About</a>
+                </li>
+                <!-- <li>
+                  <a href="#" id="link-contact" class="text-muted" data-show-section="contact-wrap">Contact</a>
+                </li> -->
+              </ul>
             </div>
           </div>
-          <div id="header-img" class="center-block"></div>
         </div>
-
-          <!-- <div id="link-wrap">
-              <a href="portfolio.html" id="link-portfolio" class="">Portfolio</a>
-              <a href="about.html" id="link-about" class="">About</a>
-              <a href="contact.html" id="link-contact" class="">Contact</a>
-          </div> -->
       </div>
     </header>
     <section id="main-wrap">
-      <div class="container">
-        <ul id="navigation" class="list-inline">
-          <li>
-            <a class="filter active text-muted" data-filter="all">All</a>
-          </li>
-          <li>
-            <a class="filter text-muted" data-filter=".cat-beauty">Beauty</a>
-          </li>
-          <li>
-            <a class="filter text-muted" data-filter=".cat-fantasy">Fantasy</a>
-          </li>
-          <li>
-            <a class="filter text-muted" data-filter=".cat-bridal">Bridal</a>
-          </li>
-          <li>
-            <a class="filter text-muted" data-filter=".cat-special">Special FX</a>
-          </li>
-        </ul>
-        <ul id="portfolio" class="row list-unstyled">
-          <li class="col-xs-6 col-md-4 portfolio-item mix cat-fantasy" data-featherlight="img/portfolio/nightmare-squad-full.jpg">
-            <a href="#" class="portfolio-item-link">
-              <!-- <div class="img-overlay"></div> -->
-              <img class="img-responsive" src="img/portfolio/nightmare-squad-preview.jpg" alt="">
-              <!-- <span class="link-description text-muted">Description</span> -->
-            </a>
-          </li>
-          <li class="col-xs-6 col-md-4 portfolio-item mix cat-bridal" data-featherlight="img/portfolio/ana-bridal-full.jpg">
-            <a href="#" class="portfolio-item-link">
-              <!-- <div class="img-overlay"></div> -->
-              <img class="img-responsive" src="img/portfolio/ana-bridal-preview.jpg" alt="">
-              <!-- <span class="link-description text-muted">Description</span> -->
-            </a>
-          </li>
-          <li class="col-xs-6 col-md-4 portfolio-item mix cat-special" data-featherlight="img/portfolio/vampire-bat-full.jpg">
-            <a href="#" class="portfolio-item-link">
-              <!-- <div class="img-overlay"></div> -->
-              <img class="img-responsive" src="img/portfolio/vampire-bat-preview.jpg" alt="">
-              <!-- <span class="link-description text-muted">Description</span> -->
-            </a>
-          </li>
-          <li class="col-xs-6 col-md-4 portfolio-item mix cat-beauty" data-featherlight="img/portfolio/blue-beauty-full.jpg">
-            <a href="#" class="portfolio-item-link">
-              <!-- <div class="img-overlay"></div> -->
-              <img class="img-responsive" src="img/portfolio/blue-beauty-preview.jpg" alt="">
-              <!-- <span class="link-description text-muted">Description</span> -->
-            </a>
-          </li>
-          <li class="col-xs-6 col-md-4 portfolio-item mix cat-beauty" data-featherlight="img/portfolio/red-beauty-full.jpg">
-            <a href="#" class="portfolio-item-link">
-              <!-- <div class="img-overlay"></div> -->
-              <img class="img-responsive" src="img/portfolio/red-beauty-preview.jpg" alt="">
-              <!-- <span class="link-description text-muted">Description</span> -->
-            </a>
-          </li>
-          <li class="col-xs-6 col-md-4 portfolio-item mix cat-special" data-featherlight="img/portfolio/ice-demon-full.jpg">
-            <a href="#" class="portfolio-item-link">
-              <!-- <div class="img-overlay"></div> -->
-              <img class="img-responsive" src="img/portfolio/ice-demon-preview.jpg" alt="">
-              <!-- <span class="link-description text-muted">Description</span> -->
-            </a>
-          </li>
-          <li class="col-xs-6 col-md-4 portfolio-item mix cat-special" data-featherlight="img/portfolio/steam-punk-full.jpg">
-            <a href="#" class="portfolio-item-link">
-              <!-- <div class="img-overlay"></div> -->
-              <img class="img-responsive" src="img/portfolio/steam-punk-preview.jpg" alt="">
-              <!-- <span class="link-description text-muted">Description</span> -->
-            </a>
-          </li>
-        </ul>
+      <div id="landing-wrap" class="hide-wrapper">
+        <div class="container">
+          <div id="header-img" class="center-block"></div>
+        </div>
+      </div>
+      <div id="portfolio-wrap" class="hide-wrapper">
+        <div class="container">
+          <ul id="navigation" class="list-inline text-center">
+            <li>
+              <a class="filter active text-muted" data-filter="all">All</a>
+            </li>
+            <li>
+              <a class="filter text-muted" data-filter=".cat-beauty">Beauty</a>
+            </li>
+            <li>
+              <a class="filter text-muted" data-filter=".cat-fantasy">Fantasy</a>
+            </li>
+            <li>
+              <a class="filter text-muted" data-filter=".cat-bridal">Bridal</a>
+            </li>
+            <li>
+              <a class="filter text-muted" data-filter=".cat-special">Special FX</a>
+            </li>
+          </ul>
+          <ul id="portfolio" class="row list-unstyled">
+            <li class="col-xs-6 col-md-4 portfolio-item mix cat-fantasy" data-featherlight="img/portfolio/nightmare-squad-full.jpg">
+              <a href="#" class="portfolio-item-link">
+                <!-- <div class="img-overlay"></div> -->
+                <img class="img-responsive" src="img/portfolio/nightmare-squad-preview.jpg" alt="">
+                <!-- <span class="link-description text-muted">Description</span> -->
+              </a>
+            </li>
+            <li class="col-xs-6 col-md-4 portfolio-item mix cat-bridal" data-featherlight="img/portfolio/ana-bridal-full.jpg">
+              <a href="#" class="portfolio-item-link">
+                <!-- <div class="img-overlay"></div> -->
+                <img class="img-responsive" src="img/portfolio/ana-bridal-preview.jpg" alt="">
+                <!-- <span class="link-description text-muted">Description</span> -->
+              </a>
+            </li>
+            <li class="col-xs-6 col-md-4 portfolio-item mix cat-special" data-featherlight="img/portfolio/vampire-bat-full.jpg">
+              <a href="#" class="portfolio-item-link">
+                <!-- <div class="img-overlay"></div> -->
+                <img class="img-responsive" src="img/portfolio/vampire-bat-preview.jpg" alt="">
+                <!-- <span class="link-description text-muted">Description</span> -->
+              </a>
+            </li>
+            <li class="col-xs-6 col-md-4 portfolio-item mix cat-beauty" data-featherlight="img/portfolio/blue-beauty-full.jpg">
+              <a href="#" class="portfolio-item-link">
+                <!-- <div class="img-overlay"></div> -->
+                <img class="img-responsive" src="img/portfolio/blue-beauty-preview.jpg" alt="">
+                <!-- <span class="link-description text-muted">Description</span> -->
+              </a>
+            </li>
+            <li class="col-xs-6 col-md-4 portfolio-item mix cat-beauty" data-featherlight="img/portfolio/red-beauty-full.jpg">
+              <a href="#" class="portfolio-item-link">
+                <!-- <div class="img-overlay"></div> -->
+                <img class="img-responsive" src="img/portfolio/red-beauty-preview.jpg" alt="">
+                <!-- <span class="link-description text-muted">Description</span> -->
+              </a>
+            </li>
+            <li class="col-xs-6 col-md-4 portfolio-item mix cat-special" data-featherlight="img/portfolio/ice-demon-full.jpg">
+              <a href="#" class="portfolio-item-link">
+                <!-- <div class="img-overlay"></div> -->
+                <img class="img-responsive" src="img/portfolio/ice-demon-preview.jpg" alt="">
+                <!-- <span class="link-description text-muted">Description</span> -->
+              </a>
+            </li>
+            <li class="col-xs-6 col-md-4 portfolio-item mix cat-special" data-featherlight="img/portfolio/steam-punk-full.jpg">
+              <a href="#" class="portfolio-item-link">
+                <!-- <div class="img-overlay"></div> -->
+                <img class="img-responsive" src="img/portfolio/steam-punk-preview.jpg" alt="">
+                <!-- <span class="link-description text-muted">Description</span> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="about-wrap" class="hide-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="img/about-me.jpg" alt="" class="img-responsive"/>
+            </div>
+            <div class="col-sm-6">
+              About Me
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact-wrap" class="hide-wrapper">
       </div>
     </section>
 
