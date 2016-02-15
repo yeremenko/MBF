@@ -2,7 +2,8 @@ $(document).ready(function () {
   var headerLinks = function () {
     var $headerLinks = $('#header-nav a'),
         selectedLink,
-        selectedWrap;
+        selectedWrap,
+        initiatedMixItUp = false;
 
     $headerLinks.on('click' , function (e) {
       e.preventDefault();
@@ -17,7 +18,10 @@ $(document).ready(function () {
         selectedLink.addClass('active');
 
         if ( selectedWrap == '#portfolio-wrap') {
-          initMixItUp();
+          if (initiatedMixItUp === false) {
+            initiatedMixItUp = true;
+            initMixItUp();
+          }
         }
 
         $('.hide-wrapper').fadeOut(200);

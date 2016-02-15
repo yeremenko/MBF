@@ -2,14 +2,27 @@
 #portfolio .mix {
   display: none;
 }
+.no-spam {
+  display: inline-block;
+  overflow: hidden;
+
+  width: 0;
+
+  color: transparent;
+}
 .hide-wrapper {
   display: none;
 }
 html,
 body,
 a,
+h1,
+h2,
 p,
-span {
+span,
+input,
+textarea,
+.form-control {
   font-family: 'Ostrich Sans', 'helvetica',sans-serif;
 }
 .text-red {
@@ -45,6 +58,9 @@ span {
   letter-spacing: 0.08em;
 
   color: #000;
+}
+#header-logo .text-red {
+  font-size: 1em;
 }
 #header-logo:hover,
 #header-logo:focus {
@@ -192,8 +208,32 @@ span {
   width: 100%;
 }
 /* ABOUT ========================== */
-/*#about-inner {
-  padding-top: 80px;
+/* CONTACT ======================== */
+.contact {
+  display: block;
+}
+#contact-form label,
+#contact-form input,
+#contact-form textarea,
+#contact-form button,
+span.contact {
+  font-size: 1.6em;
+  font-weight: 400;
 
-  border-top: 1px dotted #ccc;
-}*/
+  letter-spacing: 0.08em;
+}
+#contact-form button {
+  color: #fff;
+  background: #212121;
+}
+#contact-form button:focus,
+#contact-form button:hover {
+  color: #212121;
+  background: #fff;
+}
+#contact-form input.form-control,
+#contact-form textarea.form-control {
+  line-height: 40px;
+
+  min-height: 50px;
+}
