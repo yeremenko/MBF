@@ -13,17 +13,18 @@
 .hide-wrapper {
   display: none;
 }
-html,
-body,
 a,
 h1,
 h2,
+#header-logo span {
+  font-family: 'Ostrich Sans', 'helvetica',sans-serif !important;
+}
 p,
-span,
-input,
-textarea,
-.form-control {
-  font-family: 'Ostrich Sans', 'helvetica',sans-serif;
+span {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.block {
+  display: block;
 }
 .text-red {
   color: #bb161c !important;
@@ -42,6 +43,16 @@ textarea,
   max-width: 900px;
 }
 @media (max-width: 767px) {
+  #header-logo {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+  h1,
+  #header-logo {
+    text-align: center;
+  }
   #header-img {
     width: auto;
     margin-right: -15px;
@@ -52,12 +63,12 @@ textarea,
   padding-bottom: 20px;
 }
 #header-logo {
-  font-family: 'Ostrich Sans';
-  font-size: 3em;
-
   letter-spacing: 0.08em;
 
   color: #000;
+
+  font-family: 'Ostrich Sans';
+  font-size: 3em;
 }
 #header-logo .text-red {
   font-size: 1em;
@@ -70,14 +81,26 @@ textarea,
   margin-top: 10px;
 }
 #link-wrap li a {
-  font-size: 1.6em;
-
   display: inline-block;
 
   text-decoration: none;
   letter-spacing: 0.08em;
 
   border: 1px solid transparent;
+
+  font-size: 1.6em;
+}
+@media (max-width: 767px) {
+  #link-wrap {
+    float: none !important;
+
+    text-align: center;
+  }
+  #link-wrap li {
+    display: block;
+
+    width: 100%;
+  }
 }
 #link-wrap li a:hover,
 #link-wrap li a:focus {
@@ -95,11 +118,16 @@ textarea,
   max-width: 900px;
   height: 500px;
 
-  background: url('../img/faina-action.jpg') no-repeat center center;
+  background: url('../img/faina-action2.jpg') no-repeat left center;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+}
+@media (max-width: 767px) {
+  #header-img {
+    background-position: 45%;
+  }
 }
 
 /* PORTFOLIO =========================== */
@@ -109,14 +137,7 @@ textarea,
 
   border-top: 1px dotted #ccc;
 }
-/*@media (max-width: 767px) {
-  #navigation {
-    text-align: center;
-  }
-}*/
 #navigation li {
-  font-size: 1.6em;
-
   display: inline-block;
 
   margin-right: 5px;
@@ -124,11 +145,12 @@ textarea,
   padding: 0;
 
   letter-spacing: 0.08em;
+
+  font-size: 1.6em;
 }
 @media (max-width: 767px) {
   #navigation li {
-    display: block;
-
+    /*display: block;*/
     height: 38px;
 
     text-align: center;
@@ -167,13 +189,13 @@ textarea,
   text-decoration: none;
 }
 #portfolio .link-description {
-  font-size: 1.66em;
-
   display: block;
 
   margin-top: 10px;
 
   letter-spacing: 0.08em;
+
+  font-size: 1.66em;
 }
 .img-overlay {
   position: absolute;
@@ -183,7 +205,7 @@ textarea,
   overflow: hidden;
 
   width: 100%;
-  min-height: 225px;
+  min-height: 290px;
 
   background: url('../img/preview-overlay.png');
   background-repeat: no-repeat;
@@ -208,19 +230,38 @@ textarea,
   width: 100%;
 }
 /* ABOUT ========================== */
-/* CONTACT ======================== */
+#about-wrap {
+  margin-bottom: 50px;
+}
+#about-wrap h1 {
+  margin-top: 0;
+
+  letter-spacing: 1px;
+
+  font-size: 42px;
+}
+@media (max-width: 767px) {
+  #about-wrap img {
+    margin-bottom: 25px;
+  }
+}
+#about-wrap p {
+  font-size: 21px;
+  line-height: 26px;
+}
 .contact {
   display: block;
 }
+
 #contact-form label,
 #contact-form input,
 #contact-form textarea,
 #contact-form button,
 span.contact {
+  letter-spacing: 0.08em;
+
   font-size: 1.6em;
   font-weight: 400;
-
-  letter-spacing: 0.08em;
 }
 #contact-form button {
   color: #fff;
@@ -233,7 +274,7 @@ span.contact {
 }
 #contact-form input.form-control,
 #contact-form textarea.form-control {
-  line-height: 40px;
-
   min-height: 50px;
+
+  line-height: 40px;
 }
