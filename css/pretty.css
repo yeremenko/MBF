@@ -251,6 +251,7 @@ span {
 }
 .contact {
   display: block;
+  margin-bottom: 40px;
 }
 
 #contact-form label,
